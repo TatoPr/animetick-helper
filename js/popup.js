@@ -35,6 +35,7 @@ function watch_ticket(t, token){
 				$("#episode_"+a+"_"+c).addClass("watched"),
 				watched_num+=1}
 		};
+		getTag(a);
 		var d=$("input#twitter_master");
 		var l=!1;
 		0!=d.length&&(l=d.get(0).checked),
