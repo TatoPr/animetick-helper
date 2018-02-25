@@ -82,6 +82,9 @@ $(function(){
 				$(data).find("#tickets").find(".ticket_relative").each(function(i){
 					console.log(i+"passed");
 					if($(this).find('.badge').attr("src") != bad_url){
+						$(this).find('.anime_icon').remove();
+						$(this).find('.twitter').remove();
+						$(this).find('.sub_title').children().removeAttr("href");
 						$('#tickets').append($(this).html());
 					}
 				});

@@ -64,9 +64,7 @@ table {
 
 /* Animetick application css */
 div#headbar {
-    background: linear-gradient(to bottom, #FF5814, #FF3307);
-    background: -moz-linear-gradient(top, #FF5814, #FF3307);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF5814), to(#FF3307));
+    background: #f33;
     border-top: solid 1px #F83;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25);
     height: 40px;
@@ -86,13 +84,11 @@ div#headbar div#header h1#logo {
     width: 160px;
 }
 div#headbar div#header h1#logo:hover {
-    background: linear-gradient(top, #FF5814, #FF5814 50%, #FF6633);
-    background: -moz-linear-gradient(top, #FF5814, #FF5814 50%, #FF6633);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF5814), color-stop(0.5, #FF5814), to(#FF6633));
+    background: #f33;
 }
 div#headbar div#header h1#logo a {
     display: block;
-    background-image: url(/assets/animetick_logo-1219eea17b302a562882727a6ce981f3.png);
+    background-image: url(/assets/helper_logo.png);
     background-repeat: no-repeat;
     background-size: auto;
     outline: none;
@@ -101,12 +97,6 @@ div#headbar div#header h1#logo a {
     white-space: nowrap;
     width: 160px;
     height: 100%;
-}
-@media screen and (-webkit-min-device-pixel-ratio:2), (min-resolution: 2dppx) {
-    div#headbar div#header h1#logo a {
-        background-image: url(/assets/animetick_logo_2x-5247ba16dd6eee46f5d2b897347a10b0.png);
-        background-size: 160px 40px;
-    }
 }
 
 div#headbar div#header ul#twimas {
@@ -784,93 +774,11 @@ div#tickets div.ticket_relative div.anime div.episodes div.watched:hover {
 div#tickets div.ticket_relative div.anime div.episodes div.episode div.sub_title span.count {
     font-weight: bold;
 }
-.episodes div.episode button {
-    font-size: 0.8em;
-    float: right;
-}
-.episodes div.episode button.episode_watch {
-    width: 5.5em;
-}
-.episodes div.episode button.episode_watch_here {
-    width: 2em;
-}
-.episodes div.episode button.episode_watch_here img.bottom_arrow {
-    width: 8px;
-    height: 10px;
-    margin: 5px;
-    display: block;
-}
 
-div#cover {
-    background: linear-gradient(to bottom, #2A2A2A, #111);
-    background: -moz-linear-gradient(top, #2A2A2A, #111);
-    background: -webkit-gradient(linear, left top, left bottom, from(#2A2A2A), to(#111));
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    color: #EEE;
-    height: 400px;
-    margin-top: 20px;
-}
-div#cover div.ticket_logo {
-    margin: 100px 20px;
-    float: left;
-    width: 460px;
-    height: 200px;
-    background-image: url(/assets/top_logo-af7da83d715d6c1536855ded99c81ebf.png);
-    background-position: 0 0;
-    background-size: 100%;
-}
-div#cover div.ticket_logo:hover {
-    background-position: 0 200px;
-}
-div#cover div.detail {
-    padding: 30px;
-    float: left;
-    width: 540px;
-}
-div#cover div.detail div.catch {
-    text-align: center;
-    font-size: 2em;
-    margin: 20px;
-}
-div#cover div.detail h2 {
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-}
-div#cover div.detail div.context {
-    font-size: 1.3em;
-}
-div#cover div.detail div.sign_in_twitter {
-    padding: 15px;
-    text-align: center;
-    margin: auto;
-}
-
-div.twitter {
-    display: none;
-    float: right;
-    margin-top: 2px;
-    margin-right: 3px;
-}
-div.twitter_episode {
-    margin-top: 0px;
-}
-div.twitter img.twitter_icon {
-    width: 20px;
-    height: 20px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-div.twitter input {
-    margin-top: 15px;
-}
 
 a.button {
     -webkit-box-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 0px 0px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(221,221,221);
     background-image: linear-gradient(rgb(255, 255, 255), rgb(221, 221, 221));
     background-repeat: repeat-x;
     border-bottom-color: rgb(204, 204, 204);
@@ -920,103 +828,6 @@ a.button_enable {
     background-image: linear-gradient(rgb(221, 221, 221), rgb(255, 255, 255));
 }
 
-a.button_group_left {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-right-width: 0;
-    margin-right: 0;
-}
-
-a.button_group_right {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-left-width: 0;
-    margin-left: 0;
-}
-
-a.button_group_sep {
-    border-left-width: 1px;
-}
-
-a.button img.button_arrow {
-    height: 12px;
-    width: 6px;
-    vertical-align: -5%;
-}
-
-a.button_disable {
-    color: gray;
-}
-
-a.button_disable img.button_arrow {
-    fill: gray;
-}
-ul.five-block {
-    display: table;
-    color: #444;
-}
-
-ul.five-block li {
-    background: linear-gradient(to bottom, #FAFAFA, #EFEFEF);
-    background: -moz-linear-gradient(top, #FAFAFA, #EFEFEF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EFEFEF));
-    vertical-align: top;
-    display: table-cell;
-    width: 216px; /* 220px */
-    border-left: 4px solid #E0E4CC;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #DFDFDF;
-}
-
-ul.five-block li.watching {
-    background: linear-gradient(to bottom, #FFEDDE, #FFDFC5);
-    background: -moz-linear-gradient(top, #FFEDDE, #FFDFC5);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFEDDE), to(#FFDFC5));
-}
-
-ul.five-block li:hover {
-    border-left: 4px solid #69D2E7;
-    background: linear-gradient(to bottom, #EFEFEF, #FAFAFA);
-    background: -moz-linear-gradient(top, #EFEFEF, #FAFAFA);
-    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#FAFAFA));
-}
-
-ul.five-block li.watching:hover {
-    border-left: 4px solid #69D2E7;
-    background: linear-gradient(to bottom, #FFDFC5, #FFEDDE);
-    background: -moz-linear-gradient(top, #FFDFC5, #FFEDDE);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFDFC5), to(#FFEDDE));
-}
-
-ul.five-block div.one-five-block {
-    width: 100%;
-    padding: 3px;
-    float: left;
-}
-
-ul.five-block div.one-five-block img.icon {
-    display: block;
-    width: 50px;
-    height: 50px;
-    float: left;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-ul.five-block div.one-five-block div.detail {
-    display: inline-block;
-    width: 200px;
-    padding: 3px;
-    line-height: 1.2em;
-}
-ul.five-block div.one-five-block div.detail div.count {
-    padding: 3px;
-    font-weight: bold;
-}
-ul.five-block div.one-five-block div.detail div.title {
-    font-weight: bold;
-}
 span.channel {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1026,218 +837,32 @@ span.channel {
     font-weight: bold;
     padding: 1px 2px;
     font-size: 0.8em;
-    color: #E44;
+    color: #e44;
 }
 
-ul.five-block div.one-five-block button.watch {
-    width: 80px;
-    float: right;
-    margin-right: 10px;
-    margin-bottom: 3px;
+input#twitter_master{
+    display:block;
+    position:absolute;
+    opacity:0;
+    width:20px;
+    height:40px;
+    margin:0px;
 }
 
-div.channel_title {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 3px;
-}
-.onoffswitch {
-  position: relative; width: 73px;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-  display: none;
-}
-.onoffswitch-label {
-  display: block; overflow: hidden; cursor: pointer;
-  border: 2px solid #EDD8D8; border-radius: 20px;
-}
-.onoffswitch-inner {
-  width: 200%; margin-left: -100%;
-  -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
-  -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-  float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
-  font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-  content: "ON";
-  padding-left: 10px;
-  background-color: #FF5814; color: #FFFFFF;
-}
-.onoffswitch-inner:after {
-  content: "OFF";
-  padding-right: 10px;
-  background-color: #EEEEEE; color: #999999;
-  text-align: right;
-}
-.onoffswitch-switch {
-  width: 14px; margin: 5.5px;
-  background: #FFFFFF;
-  border: 2px solid #EDD8D8; border-radius: 20px;
-  position: absolute; top: 0; bottom: 0; right: 44px;
-  -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
-  -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
+input#twitter_master:checked + label {
+    display:block;
+    width:20px;
+    height:40px;
+    background-image: url(/assets/twitter_mini.png);
+    background-repeat:no-repeat;
+    margin-top:10px;
 }
 
-
-div.big_ticket {
-    width: 700px;
-    margin: 20px auto;
-    background: linear-gradient(to bottom, #FAFAFA, #EFEFEF);
-    background: -moz-linear-gradient(top, #FAFAFA, #EFEFEF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EFEFEF));
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #DFDFDF;
-    overflow: hidden;
-}
-
-div.big_ticket div.icon {
-    width: 140px;
-    height: 140px;
-    float: left;
-}
-div.big_ticket div.icon img.icon {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 20px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-
-div.big_ticket div.detail {
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 560px;
-}
-
-div.big_ticket div.detail div.title {
-    font-size: 2.5em;
-    font-weight: bold;
-    width: 540px;
-}
-
-div.big_ticket div.detail div.title a {
-    color: black;
-    text-decoration: none;
-}
-
-div.big_ticket div.detail div.title a:hover {
-    text-decoration: underline;
-}
-
-div.big_ticket div.detail div.sub_title {
-    font-size: 1.7em;
-    margin: 10px auto;
-    width: 540px;
-}
-
-div.big_ticket div.detail div.sub_title span.count {
-    font-weight: bold;
-}
-
-div.big_ticket div.watched_num {
-    font-size: 1.9em;
-    float: right;
-    margin-right: 20px;
-}
-
-div.big_ticket div.watched_num span.num {
-    font-weight: bold;
-}
-
-div.watched_users {
-    width: 700px;
-    margin: auto;
-}
-
-div.watched_users a {
-    text-decoration: none;
-}
-ul.animations li.animation {
-    display: table-cell;
-    margin-left: 10px;
-    padding: 5px;
-    width: 100px;
-}
-ul.animations li.animation a {
-    text-decoration: none;
-}
-ul.animations li.animation div.icon {
-    text-align: center;
-    position: relative;
-}
-ul.animations li.animation div.icon div.progress {
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    top: 50px;
-    left: 24px;
-    border: 1px solid #FF5814;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    background: linear-gradient(to bottom, #FAFAFA, #DFDFDF);
-    background: -moz-linear-gradient(top, #FAFAFA, #DFDFDF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#DFDFDF));
-    filter: alpha(opacity=75);
-    -moz-opacity:0.75;
-    opacity:0.75;
-}
-ul.animations li.animation div.icon div.progress div.progress-bar {
-    height: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    background: linear-gradient(to bottom, #FF5814, #FF3307);
-    background: -moz-linear-gradient(top, #FF5814, #FF3307);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF5814), to(#FF3307));
-    filter: alpha(opacity=75);
-    -moz-opacity:0.75;
-    opacity:0.75;
-}
-ul.animations li.animation div.icon img {
-    width: 60px;
-    height: 60px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 3px #999;
-    -moz-box-shadow: 0px 0px 3px #999;
-    -webkit-box-shadow: 0px 0px 3px #999;
-}
-ul.animations li.animation:hover a div.icon img {
-    box-shadow: 0px 0px 7px #999;
-    -moz-box-shadow: 0px 0px 7px #999;
-    -webkit-box-shadow: 0px 0px 7px #555;
-}
-ul.animations li.animation div.detail {
-    text-align: center;
-    width: 100px;
-    height: 2em;
-    overflow: hidden;
-    word-wrap: break-word;
-    font-weight: bold;
-    color: #333;
-}
-ul.animations li.animation:hover a div.detail {
-    text-decoration: underline;
-}
-div.user_anime {
-    background: linear-gradient(to bottom, #FAFAFA, #EFEFEF);
-    background: -moz-linear-gradient(top, #FAFAFA, #EFEFEF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EFEFEF));
-    margin-bottom: 5px;
-    min-height: 10px;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #DFDFDF;
+input#twitter_master + label{
+    display:block;
+    width:20px;
+    height:40px;
+    background-image: url(/assets/notwitter.png);
+    background-repeat:no-repeat;
+    margin-top:10px;
 }
