@@ -81,14 +81,19 @@ $(function(){
 
 				$(data).find("#tickets").find(".ticket_relative").each(function(i){
 					console.log(i+"passed");
-					var badge_url = $(this).find('.badge').attr("src")
-					if(!(badge_url.includes(bad_url))){
-						$(this).find('.badge').attr("src", badge_url.replace(/-\w{20,}/, ""))
+					var badge_str = $(this).find('.badge').attr("src");
+					console.log(badge_str);
+					if(badge_str === undefined){
+						badge_str = ""
+					};
+					if(!(badge_str.includes(bad_url))){
+						console.log(badge_str);
+						$(this).find('.badge').attr("src", badge_str.replace(/-\w{20,}/, ""));
 						$(this).find('.anime_icon').remove();
 						$(this).find('.twitter').remove();
 						$(this).find('.sub_title').children().removeAttr("href");
 						$('#tickets').append($(this).html());
-					}
+					};
 				});
 				console.log("opened");
 
