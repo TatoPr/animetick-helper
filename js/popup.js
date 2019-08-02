@@ -75,13 +75,15 @@ $(function(){
 			method:'GET',
 			dataType: 'html',
 			success: function(data){
-				var bad_url = "/assets/badge_tomorrow-863fb2f97d54430c0aa58df48c00bcaf.png";
+				var bad_url = "badge_tomorrow";
 				var token = $($(data)[7]).prop("content");
 				console.log(token);
 
 				$(data).find("#tickets").find(".ticket_relative").each(function(i){
 					console.log(i+"passed");
-					if($(this).find('.badge').attr("src") != bad_url){
+					var badge_url = $(this).find('.badge').attr("src")
+					if(!(badge_url.includes(bad_url))){
+						$(this).find('.badge').attr("src", badge_url.replace(/-\w{20,}/, ""))
 						$(this).find('.anime_icon').remove();
 						$(this).find('.twitter').remove();
 						$(this).find('.sub_title').children().removeAttr("href");
